@@ -7,9 +7,16 @@ import { worker } from './mocks/browser';
 worker.start({
   serviceWorker: {
     // Points to the custom location of the Service Worker file.
-    url: '/assets/mockServiceWorker.js',
+    url: 'https://github-m3p2jr--4200.local.webcontainer.io/mockServiceWorker.js',
   },
 });
+
+navigator.serviceWorker
+  .register(
+    'https://github-m3p2jr--4200.local.webcontainer.io/mockServiceWorker.js'
+  )
+  .then(console.log)
+  .catch(console.error);
 
 if (environment.production) {
   enableProdMode();
