@@ -43,5 +43,8 @@
     "msw": "latest",
     "start-server-and-test": "^1.11.2",
     "ts-node": "^10.1.0"
+  },
+  "msw": {
+    "workerDirectory": "src"
   }
 }

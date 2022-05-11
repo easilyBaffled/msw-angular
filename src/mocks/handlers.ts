@@ -1,7 +1,7 @@
 import { rest } from 'msw';
 
 export const handlers = [
-  rest.post('*/login', (req, res, ctx) => {
+  rest.post('/login', (req, res, ctx) => {
     console.log(req, res, ctx);
     const { username } = req.body as any;
 
