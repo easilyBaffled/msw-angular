@@ -2,13 +2,6 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-import { worker } from '../mocks/browser';
-worker.start({
-  serviceWorker: {
-    // Points to the custom location of the Service Worker file.
-    url: '/assets/mockServiceWorker.js',
-  },
-});
 
 export const environment = {
   production: false,
